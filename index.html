@@ -15,303 +15,329 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300..800&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<script>
-  // スクロール演出を有効にする印。これが付かない限り .reveal は常に表示される。
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
-      'IntersectionObserver' in window) {
-    document.documentElement.classList.add('js');
-  }
-</script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header__inner">
+<header class="head">
+  <div class="wrap head__inner">
     <a class="mark" href="#top">S<i>&amp;</i>YTech</a>
-    <nav class="site-nav">
-      <a class="site-nav__hide-sm" href="#services">提供するもの</a>
-      <a class="site-nav__hide-sm" href="#payments">決済</a>
-      <a class="site-nav__hide-sm" href="#price">料金</a>
-      <a class="site-nav__hide-sm" href="#about">運営者</a>
-      <a class="site-nav__cta" href="#contact">お問い合わせ</a>
+    <nav class="nav">
+      <a class="nav__sm-hide" href="#offer">提供するもの</a>
+      <a class="nav__sm-hide" href="#money">お金の流れ</a>
+      <a class="nav__sm-hide" href="#price">料金</a>
+      <a class="nav__sm-hide" href="#about">運営者</a>
+      <a class="nav__cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
 
-  <!-- ========== ヒーロー ========== -->
-  <section class="section hero">
-    <div class="wrap">
-      <p class="hero__kicker">S&amp;YTech — 個人事業／日本</p>
-      <h1>ネイリストが<em>自分の技術を売る</em>ための、<br>集客と販売の仕組みをつくります。</h1>
-      <p class="hero__body">
-        技術はネイリストが持っています。足りないのは、その技術にたどり着いてもらい、支払いまで進んでもらうための導線です。S&amp;YTech は、ホームページ・公式LINE・動画の売り場を一体で制作し、運用します。
-      </p>
-      <div class="hero__actions">
-        <a class="btn btn--solid" href="#services">提供するものを見る</a>
-        <a class="btn btn--ghost" href="#contact">相談する</a>
+  <!-- ================= ヒーロー ＋ 事業サマリー ================= -->
+  <section class="wrap hero">
+    <p class="hero__tag">S&amp;YTech — Sole proprietorship, Japan</p>
+
+    <h1>ネイリストが<em>自分の技術を売る</em>ための、集客と販売の仕組みをつくります。</h1>
+
+    <p class="hero__body">
+      技術はネイリストが持っています。足りないのは、その技術にたどり着いてもらい、支払いまで進んでもらうための導線です。S&amp;YTech は、ホームページ・公式LINE・動画の売り場を一体で制作し、運用します。
+    </p>
+
+    <dl class="summary">
+      <div class="summary__row">
+        <dt>事業名</dt>
+        <dd>S&amp;YTech</dd>
+      </div>
+      <div class="summary__row">
+        <dt>対象</dt>
+        <dd>ネイリスト個人、ネイルサロン、ネイルスクール運営者</dd>
+      </div>
+      <div class="summary__row">
+        <dt>形態</dt>
+        <dd>個人事業（日本）</dd>
+      </div>
+      <div class="summary__row">
+        <dt>提供</dt>
+        <dd>ホームページ制作／公式LINEの自動育成／動画の売り場</dd>
+      </div>
+      <div class="summary__row">
+        <dt>代表者</dt>
+        <dd>Yuta Shibanuma</dd>
+      </div>
+      <div class="summary__row">
+        <dt>収益</dt>
+        <dd>初期制作費・月額利用料・決済のプラットフォーム手数料</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ================= 01 提供するもの ================= -->
+  <section class="band" id="offer">
+    <div class="wrap ledger">
+      <div class="ledger__label">
+        <span class="ledger__num">01</span>
+        <span class="ledger__lat">Services</span>
+        <span class="ledger__rule"></span>
+      </div>
+
+      <div>
+        <h2 class="band__title">提供するもの</h2>
+        <p class="band__lead">
+          ネイリストからよく聞く 3 つの詰まりに、それぞれ対応する仕組みを制作します。3 つをワンセットで納品し、公開後も運用を継続します。ネイルの施術・指導そのものは行いません。教材や講座の内容はすべてクライアントのものです。
+        </p>
+
+        <div class="offer">
+
+          <article class="offer__item">
+            <p class="offer__voice">「フォロワーは増えたが、そこから先の受け皿がない。」</p>
+            <h3 class="offer__name">ホームページ制作</h3>
+            <p class="offer__desc">
+              Instagram のプロフィールから来た人が、サービス内容を理解し、そのまま登録・購入まで進めるサイトを制作します。スマートフォンでの閲覧を前提に設計します。
+            </p>
+            <dl class="offer__includes">
+              <dt>含むもの</dt>
+              <dd>
+                <span>サービス紹介・料金ページの構成と執筆</span><span>会員登録・ログイン導線の実装</span><span>スマートフォン最適化</span><span>公開後の内容更新</span>
+              </dd>
+            </dl>
+          </article>
+
+          <article class="offer__item">
+            <p class="offer__voice">「興味を持ってくれた人への案内を、毎回手作業で送っている。」</p>
+            <h3 class="offer__name">公式LINEの自動育成</h3>
+            <p class="offer__desc">
+              LINE Messaging API を使い、友だち追加後のメッセージを自動で配信します。段階的に内容を伝えたうえで、購入ページへ案内します。
+            </p>
+            <dl class="offer__includes">
+              <dt>含むもの</dt>
+              <dd>
+                <span>友だち追加後の自動メッセージ設計</span><span>配信シナリオの作成と改善</span><span>購入ページへの誘導設定</span><span>手動での一斉配信</span>
+              </dd>
+            </dl>
+          </article>
+
+          <article class="offer__item">
+            <p class="offer__voice">「動画教材を売りたいが、決済・会員管理・配信を自分で用意できない。」</p>
+            <h3 class="offer__name">動画の売り場</h3>
+            <p class="offer__desc">
+              動画教材を販売し、購入者だけが視聴できる状態にするための一式です。会員管理から動画配信までを含みます。
+            </p>
+            <dl class="offer__includes">
+              <dt>含むもの</dt>
+              <dd>
+                <span>会員登録・ログイン</span><span>月額サブスクリプションの販売</span><span>単発動画の販売</span><span>購入内容にもとづく視聴権限の管理</span><span>動画配信</span><span>無料サンプルの公開</span>
+              </dd>
+            </dl>
+          </article>
+
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 導線レール（シグネチャー） ========== -->
-  <section class="rail-block">
-    <div class="wrap">
-      <p class="rail-caption">フォロワーが受講者になるまでの導線</p>
-      <div class="rail reveal">
+  <!-- ================= 02 導線 ================= -->
+  <section class="band" id="route">
+    <div class="wrap ledger">
+      <div class="ledger__label">
+        <span class="ledger__num">02</span>
+        <span class="ledger__lat">Route</span>
+        <span class="ledger__rule"></span>
+      </div>
 
-        <div class="node node--outside">
-          <span class="node__step">起点</span>
-          <span class="node__name">Instagram</span>
-          <span class="node__note">クライアント自身の発信</span>
-        </div>
+      <div>
+        <h2 class="band__title">フォロワーが受講者になるまで</h2>
+        <p class="band__lead">
+          発信はクライアント自身が続けます。S&amp;YTech が引き受けるのは、その先の 4 つの段階です。
+        </p>
 
-        <div class="link" aria-hidden="true"></div>
-
-        <div class="owned">
-          <span class="owned__tag">S&amp;YTech が構築・運用</span>
-
-          <div class="node">
-            <span class="node__step">01</span>
-            <span class="node__name">公式LINE</span>
-            <span class="node__note">友だち追加後に自動で案内</span>
+        <div class="route">
+          <div class="route__step">
+            <p class="route__k">起点</p>
+            <p class="route__name">Instagram</p>
+            <p class="route__note">クライアント自身の発信。ここは変えません。</p>
           </div>
 
-          <div class="link" aria-hidden="true"></div>
-
-          <div class="node">
-            <span class="node__step">02</span>
-            <span class="node__name">ホームページ</span>
-            <span class="node__note">内容を理解してもらう場</span>
+          <div class="route__owned">
+            <div class="route__step">
+              <p class="route__k">01</p>
+              <p class="route__name">公式LINE</p>
+              <p class="route__note">友だち追加をきっかけに、案内を自動で送る。</p>
+            </div>
+            <div class="route__step">
+              <p class="route__k">02</p>
+              <p class="route__name">ホームページ</p>
+              <p class="route__note">サービス内容と料金を理解してもらう。</p>
+            </div>
+            <div class="route__step">
+              <p class="route__k">03</p>
+              <p class="route__name">会員登録・決済</p>
+              <p class="route__note">月額サブスクリプション、または単発購入。</p>
+            </div>
+            <div class="route__step">
+              <p class="route__k">04</p>
+              <p class="route__name">動画の視聴</p>
+              <p class="route__note">購入内容にもとづく視聴権限で配信。</p>
+            </div>
+            <p class="route__owned-label">この 4 段階を S&amp;YTech が構築・運用します</p>
           </div>
-
-          <div class="link" aria-hidden="true"></div>
-
-          <div class="node">
-            <span class="node__step">03</span>
-            <span class="node__name">会員登録・決済</span>
-            <span class="node__note">サブスク／単発購入</span>
-          </div>
-
-          <div class="link" aria-hidden="true"></div>
-
-          <div class="node">
-            <span class="node__step">04</span>
-            <span class="node__name">動画の視聴</span>
-            <span class="node__note">視聴権限にもとづく配信</span>
-          </div>
-
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== 課題 ========== -->
-  <section class="section" id="problems">
-    <div class="wrap">
-      <span class="eyebrow">Why</span>
-      <h2 class="section__title">技術があっても、売り場がなければ売上にはなりません。</h2>
-      <p class="section__lead">
-        ネイリストからよく聞く 3 つの詰まり方です。S&amp;YTech が提供する 3 つの仕組みは、それぞれこの詰まりに対応しています。
-      </p>
-
-      <div class="problems">
-        <div class="problem">
-          <p class="problem__voice">フォロワーは増えたが、そこから先の受け皿がない。</p>
-          <p class="problem__answer">→ ホームページ制作</p>
-        </div>
-        <div class="problem">
-          <p class="problem__voice">興味を持ってくれた人への案内を、毎回手作業で送っている。</p>
-          <p class="problem__answer">→ 公式LINEの自動育成</p>
-        </div>
-        <div class="problem">
-          <p class="problem__voice">動画教材を売りたいが、決済・会員管理・配信を自分で用意できない。</p>
-          <p class="problem__answer">→ 動画の売り場</p>
-        </div>
+  <!-- ================= 03 お金の流れ ================= -->
+  <section class="band" id="money">
+    <div class="wrap ledger">
+      <div class="ledger__label">
+        <span class="ledger__num">03</span>
+        <span class="ledger__lat">Payments</span>
+        <span class="ledger__rule"></span>
       </div>
-    </div>
-  </section>
 
-  <!-- ========== 提供するもの ========== -->
-  <section class="section" id="services">
-    <div class="wrap">
-      <span class="eyebrow">Services</span>
-      <h2 class="section__title">提供するもの</h2>
-      <p class="section__lead">
-        3 つをワンセットで制作し、公開後も運用を継続します。ネイルの施術・指導そのものは行いません。教材や講座の内容はすべてクライアントのものです。
-      </p>
+      <div>
+        <h2 class="band__title">お金の流れ</h2>
+        <p class="band__lead">
+          受講者が支払った代金は S&amp;YTech を経由しません。決済はクライアント名義の Stripe アカウントで行われ、S&amp;YTech が受け取るのはプラットフォーム手数料のみです。
+        </p>
 
-      <div class="services">
+        <div class="money">
+          <p class="money__from">受講者が支払う代金</p>
+          <p class="money__via">クライアント名義の Stripe アカウントで決済（Stripe Connect Express / Direct charges）</p>
 
-        <article class="service reveal">
-          <span class="service__no">01 / WEB</span>
-          <h3 class="service__name">ホームページ制作</h3>
-          <p class="service__desc">
-            Instagram のプロフィールから来た人が、サービス内容を理解し、そのまま登録・購入まで進めるサイトを制作します。スマートフォンでの閲覧を前提に設計します。
-          </p>
-          <ul class="service__list">
-            <li>サービス紹介・料金ページの構成と執筆</li>
-            <li>会員登録・ログイン導線の実装</li>
-            <li>スマートフォン最適化</li>
-            <li>公開後の内容更新</li>
+          <ul class="money__split">
+            <li>
+              <span class="money__who">クライアントの銀行口座</span>
+              <span class="money__what">手数料を差し引いた売上が直接入金される</span>
+            </li>
+            <li>
+              <span class="money__who">S&amp;YTech</span>
+              <span class="money__what">決済額に対するプラットフォーム手数料</span>
+            </li>
+            <li>
+              <span class="money__who">Stripe</span>
+              <span class="money__what">決済処理の手数料</span>
+            </li>
           </ul>
-        </article>
+        </div>
 
-        <article class="service reveal">
-          <span class="service__no">02 / LINE</span>
-          <h3 class="service__name">公式LINEの自動育成</h3>
-          <p class="service__desc">
-            LINE Messaging API を使い、友だち追加後のメッセージを自動で配信します。段階的に内容を伝えたうえで、購入ページへ案内します。
-          </p>
-          <ul class="service__list">
-            <li>友だち追加後の自動メッセージ設計</li>
-            <li>配信シナリオの作成と改善</li>
-            <li>購入ページへの誘導設定</li>
-            <li>手動での一斉配信にも対応</li>
-          </ul>
-        </article>
-
-        <article class="service reveal">
-          <span class="service__no">03 / VIDEO</span>
-          <h3 class="service__name">動画の売り場</h3>
-          <p class="service__desc">
-            動画教材を販売し、購入者だけが視聴できる状態にするための一式です。会員管理から動画配信までを含みます。
-          </p>
-          <ul class="service__list">
-            <li>会員登録・ログイン</li>
-            <li>月額サブスクリプションの販売</li>
-            <li>単発動画の販売</li>
-            <li>購入内容にもとづく視聴権限の管理</li>
-            <li>動画配信・無料サンプルの公開</li>
-          </ul>
-        </article>
-
+        <ul class="facts">
+          <li>S&amp;YTech が売上そのものを預かることはありません。</li>
+          <li>クレジットカード情報は Stripe が処理し、S&amp;YTech およびクライアントのサーバーには保存されません。</li>
+          <li>受講者との契約当事者はクライアントです。教材の提供責任はクライアントが負い、S&amp;YTech はその仕組みを制作・運用する立場です。</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- ========== 決済とお金の流れ ========== -->
-  <section class="section section--dark" id="payments">
-    <div class="wrap">
-      <span class="eyebrow">Payments</span>
-      <h2 class="section__title">決済とお金の流れ</h2>
-      <p class="section__lead">
-        受講者が支払った代金は、S&amp;YTech を経由せず、クライアントの口座に直接入金されます。S&amp;YTech が受け取るのはプラットフォーム手数料のみです。
-      </p>
-
-      <div class="flow">
-        <div class="flow__cell">
-          <p class="flow__label">1. 支払う</p>
-          <p class="flow__head">受講者</p>
-          <p class="flow__text">クライアントのサイト上で、月額サブスクリプションまたは単発動画の代金をクレジットカードで支払います。</p>
-        </div>
-        <div class="flow__cell">
-          <p class="flow__label">2. 受け取る</p>
-          <p class="flow__head">クライアント（ネイリスト）</p>
-          <p class="flow__text">クライアント名義の Stripe アカウントで決済され、売上はクライアントの銀行口座に入金されます。受講者に教材を提供するのもクライアントです。</p>
-        </div>
-        <div class="flow__cell flow__cell--accent">
-          <p class="flow__label">3. 手数料</p>
-          <p class="flow__head">S&amp;YTech</p>
-          <p class="flow__text">決済額に対するプラットフォーム手数料のみを受け取ります。売上そのものを預かることはありません。</p>
-        </div>
+  <!-- ================= 04 料金 ================= -->
+  <section class="band" id="price">
+    <div class="wrap ledger">
+      <div class="ledger__label">
+        <span class="ledger__num">04</span>
+        <span class="ledger__lat">Pricing</span>
+        <span class="ledger__rule"></span>
       </div>
 
-      <ul class="notes">
-        <li>決済基盤には Stripe Connect（Express アカウント）を利用し、Direct charges で処理します。</li>
-        <li>クレジットカード情報は Stripe が処理し、S&amp;YTech およびクライアントのサーバーには保存されません。</li>
-        <li>受講者との契約当事者はクライアントです。S&amp;YTech はその仕組みを制作・運用する立場です。</li>
-      </ul>
+      <div>
+        <h2 class="band__title">料金の考え方</h2>
+        <p class="band__lead">
+          制作の範囲と運用の内容によって変わるため、個別にお見積りします。料金は次の 3 つの合計です。
+        </p>
+
+        <p class="formula">
+          初期制作費 <i>＋</i> 月額利用料 <i>＋</i> 決済手数料
+        </p>
+
+        <div class="rates">
+          <div class="rate">
+            <p class="rate__name">初期制作費</p>
+            <p class="rate__desc">ホームページ、公式LINEの設定、動画の売り場の構築。着手前に一括で見積り、合意のうえで着手します。</p>
+            <p class="rate__value">個別見積り</p>
+          </div>
+          <div class="rate">
+            <p class="rate__name">月額利用料</p>
+            <p class="rate__desc">公開後のサーバー・システムの維持、内容の更新、配信シナリオの改善、不具合対応。</p>
+            <p class="rate__value">個別見積り</p>
+          </div>
+          <div class="rate">
+            <p class="rate__name">決済手数料</p>
+            <p class="rate__desc">動画教材の売上に対して発生するプラットフォーム手数料。売上がない月は発生しません。別途 Stripe の決済手数料がかかります。</p>
+            <p class="rate__value">売上に対する料率</p>
+          </div>
+        </div>
+
+        <p class="note">
+          金額はご相談内容にもとづいて算出し、契約前に電子メール等の書面で提示します。提示した金額に合意いただくまで、費用は一切発生しません。
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- ========== 料金 ========== -->
-  <section class="section" id="price">
-    <div class="wrap">
-      <span class="eyebrow">Pricing</span>
-      <h2 class="section__title">料金の考え方</h2>
-      <p class="section__lead">
-        制作の範囲と運用の内容によって変わるため、個別にお見積りします。料金は次の 3 つで構成されます。
-      </p>
-
-      <div class="price-table">
-        <div class="price-row">
-          <p class="price-row__name">初期制作費</p>
-          <p class="price-row__desc">ホームページ、公式LINEの設定、動画の売り場の構築。着手前に一括で見積り、合意のうえで着手します。</p>
-          <p class="price-row__amount">個別見積り</p>
-        </div>
-        <div class="price-row">
-          <p class="price-row__name">月額利用料</p>
-          <p class="price-row__desc">公開後のサーバー・システムの維持、内容の更新、配信シナリオの改善、不具合対応。</p>
-          <p class="price-row__amount">個別見積り</p>
-        </div>
-        <div class="price-row">
-          <p class="price-row__name">決済手数料</p>
-          <p class="price-row__desc">動画教材の売上に対して発生するプラットフォーム手数料。売上がない月は発生しません。別途 Stripe の決済手数料がかかります。</p>
-          <p class="price-row__amount">売上に対する料率</p>
-        </div>
+  <!-- ================= 05 運営者情報 ================= -->
+  <section class="band" id="about">
+    <div class="wrap ledger">
+      <div class="ledger__label">
+        <span class="ledger__num">05</span>
+        <span class="ledger__lat">About</span>
+        <span class="ledger__rule"></span>
       </div>
 
-      <p class="fineprint">
-        金額はご相談内容にもとづいて算出し、契約前に電子メール等の書面で提示します。提示した金額に合意いただくまで、費用は一切発生しません。
-      </p>
+      <div>
+        <h2 class="band__title">運営者情報</h2>
+
+        <dl class="about">
+          <div class="about__row">
+            <dt>事業名</dt>
+            <dd>S&amp;YTech</dd>
+          </div>
+          <div class="about__row">
+            <dt>形態</dt>
+            <dd>個人事業</dd>
+          </div>
+          <div class="about__row">
+            <dt>代表者</dt>
+            <dd>Yuta Shibanuma</dd>
+          </div>
+          <div class="about__row">
+            <dt>所在地</dt>
+            <dd>日本<small>詳細な住所は、ご請求があれば遅滞なく開示します。</small></dd>
+          </div>
+          <div class="about__row">
+            <dt>連絡先</dt>
+            <dd><a href="mailto:bababanuma@gmail.com">bababanuma@gmail.com</a></dd>
+          </div>
+          <div class="about__row">
+            <dt>事業内容</dt>
+            <dd>ネイリスト・ネイルサロン・ネイルスクール運営者に向けた、集客および販売の仕組みの制作・提供</dd>
+          </div>
+          <div class="about__row">
+            <dt>法定表記</dt>
+            <dd><a href="tokushoho.html">特定商取引法に基づく表記</a>　/　<a href="privacy.html">プライバシーポリシー</a></dd>
+          </div>
+        </dl>
+      </div>
     </div>
   </section>
 
-  <!-- ========== 運営者情報 ========== -->
-  <section class="section" id="about">
-    <div class="wrap">
-      <span class="eyebrow">About</span>
-      <h2 class="section__title">運営者情報</h2>
+  <!-- ================= 06 お問い合わせ ================= -->
+  <section class="band" id="contact">
+    <div class="wrap ledger">
+      <div class="ledger__label">
+        <span class="ledger__num">06</span>
+        <span class="ledger__lat">Contact</span>
+        <span class="ledger__rule"></span>
+      </div>
 
-      <dl class="deflist">
-        <div class="deflist__row">
-          <dt>事業名</dt>
-          <dd>S&amp;YTech</dd>
-        </div>
-        <div class="deflist__row">
-          <dt>形態</dt>
-          <dd>個人事業</dd>
-        </div>
-        <div class="deflist__row">
-          <dt>代表者</dt>
-          <dd>Yuta Shibanuma</dd>
-        </div>
-        <div class="deflist__row">
-          <dt>所在地</dt>
-          <dd>日本<br><span style="font-size:13px;color:var(--muted)">詳細な住所は、ご請求があれば遅滞なく開示します。</span></dd>
-        </div>
-        <div class="deflist__row">
-          <dt>連絡先</dt>
-          <dd><a href="mailto:bababanuma@gmail.com">bababanuma@gmail.com</a></dd>
-        </div>
-        <div class="deflist__row">
-          <dt>事業内容</dt>
-          <dd>ネイリスト・ネイルサロン・ネイルスクール運営者に向けた、集客および販売の仕組みの制作・提供</dd>
-        </div>
-        <div class="deflist__row">
-          <dt>対象のお客さま</dt>
-          <dd>ネイリスト個人、ネイルサロン、ネイルスクール運営者</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
+      <div>
+        <h2 class="band__title">お問い合わせ</h2>
+        <p class="band__lead">
+          制作のご相談、料金のお見積り、その他のご質問はメールでお受けしています。3 営業日以内に返信します。
+        </p>
 
-  <!-- ========== お問い合わせ ========== -->
-  <section class="section" id="contact">
-    <div class="wrap">
-      <span class="eyebrow">Contact</span>
-      <h2 class="section__title">お問い合わせ</h2>
-      <p class="section__lead">
-        制作のご相談、料金のお見積り、その他のご質問はメールでお受けしています。3 営業日以内に返信します。
-      </p>
+        <a class="mailto" href="mailto:bababanuma@gmail.com?subject=%EF%BC%BBS%26YTech%EF%BC%BD%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">bababanuma@gmail.com</a>
 
-      <div class="contact">
-        <p class="contact__label">EMAIL</p>
-        <a class="contact__mail" href="mailto:bababanuma@gmail.com?subject=%EF%BC%BBS%26YTech%EF%BC%BD%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">bababanuma@gmail.com</a>
         <p class="contact__note">
           お名前、活動されている地域、現在の発信手段（Instagram のアカウント等）、ご相談内容を添えてお送りいただけると、具体的にお返事できます。
         </p>
@@ -321,48 +347,25 @@
 
 </main>
 
-<footer class="site-footer">
+<footer class="foot">
   <div class="wrap">
-    <div class="site-footer__inner">
+    <div class="foot__inner">
       <div>
-        <span class="mark" style="color:#fff">S<i>&amp;</i>YTech</span>
-        <p class="site-footer__desc">ネイリスト向けに、集客と販売の仕組みを制作・提供する個人事業です。</p>
+        <span class="mark">S<i>&amp;</i>YTech</span>
+        <p class="foot__desc">ネイリスト向けに、集客と販売の仕組みを制作・提供する個人事業です。</p>
       </div>
-      <nav class="footer-nav">
-        <a href="#services">提供するもの</a>
+      <nav class="foot__nav">
+        <a href="#offer">提供するもの</a>
+        <a href="#money">お金の流れ</a>
         <a href="#price">料金</a>
         <a href="tokushoho.html">特定商取引法に基づく表記</a>
         <a href="privacy.html">プライバシーポリシー</a>
         <a href="mailto:bababanuma@gmail.com">お問い合わせ</a>
       </nav>
     </div>
-    <p class="copyright">© 2026 S&amp;YTech</p>
+    <p class="foot__copy">© 2026 S&amp;YTech</p>
   </div>
 </footer>
-
-<script>
-(function () {
-  if (!document.documentElement.classList.contains('js')) return;
-
-  var targets = document.querySelectorAll('.reveal');
-  var showAll = function () {
-    targets.forEach(function (el) { el.classList.add('is-in'); });
-  };
-
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '0px 0px -10% 0px' });
-  targets.forEach(function (el) { io.observe(el); });
-
-  // 観測が働かない環境でも 2 秒後には必ず表示する。
-  setTimeout(showAll, 2000);
-})();
-</script>
 
 </body>
 </html>
